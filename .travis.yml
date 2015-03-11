@@ -28,7 +28,7 @@ before_install:
     - source activate test-environment
     - apt-get source libsamplerate
     - pushd libsamplerate-*
-    - ./configure --prefix=$HOME/miniconda/env/test-environment
+    - ./configure --prefix=$HOME/miniconda/envs/test-environment
     - make && make install
     - popd
 
