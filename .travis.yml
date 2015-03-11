@@ -34,7 +34,8 @@ before_install:
 
 install:
     # install your own package into the environment
-    - pip install scikits.samplerate
+    # - pip install scikits.samplerate
+    - pip install git+https://github.com/gregorias/samplerate.git@0.3.x
 
 script:
     - nosetests -v -w tests/
